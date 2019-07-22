@@ -5,6 +5,8 @@
 	h1{	
 		color: Red;
 		font-family: Lobster, monospace;
+		background-color: black;
+		padding: 0.25em;
 	}
 	.body-background {
 		background-color: silver;
@@ -14,31 +16,42 @@
 		border-width: 5px;
 		border-style: solid;
 		border-radius: 50%
-
 	}
 	.small-image{
 				width: 100px;
 
-				 margin: auto;
-  		  		
+				 margin: auto;  		  		
 
 	}
-	
+	<!-- Buton Renklendirme-->
 	div{
 		color: green;
 	
 	}
-
-
+	  button {
+    border-radius: 5px;
+    color: white;
+    background-color: #0F5897;
+    padding: 5px 10px 8px 10px;
   }
+  
+  button:hover {
+    animation-name: background-color;
+    animation-duration: 500ms;
+  }
+  @keyframes background-color {
+    100% {
+      background-color:  #4791d0;
+    }
+  }}
 </style>
 <head>
+	<link rel="stylesheet" type="text/css" href="hearth.css">
 	<title>May the force be whit you</title>
 	<h1>Star Wars</h1>
 </head>
 
 <img src="https://bit.ly/2XM6BVs" class="image-border small-image">
-
 <body>
 <div class="blur">
 	<ol>
@@ -54,7 +67,7 @@
 		<li>Episode VIII: The Last Jedi.<input type="checkbox" name="Watched">Watched</li>
 	</ul>
 </div>
-	
 </body>
-
+   <input type="text" value="Your Mail"><button>Submit</button>
 </html>
+<footer>&copy; 2019 E.A TR</footer>
